@@ -23,8 +23,8 @@ def obtain_data(url, api_key, start_date, end_date):
 
 url_api = "https://api.nasa.gov/neo/rest/v1/feed"
 api_key = "Vf6Ex970rHCGrFjWtJffcRXHXWm8IHOaxwrythDm"
-start_date = '2023-01-01'
-end_date = '2023-01-07'
+start_date = '2023-02-20'
+end_date = '2023-02-27'
 
 data = obtain_data(url_api, api_key, start_date, end_date)
 

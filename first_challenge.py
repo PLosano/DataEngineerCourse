@@ -24,8 +24,8 @@ def obtain_data(config, start_date, end_date):
         return None
 
 config = dotenv_values(".env")
-start_date = '2023-02-20'
-end_date = '2023-02-27'
+start_date = '2023-03-07'
+end_date = '2023-03-14'
 
 data = obtain_data(config, start_date, end_date)
 

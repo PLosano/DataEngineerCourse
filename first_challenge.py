@@ -1,4 +1,5 @@
 import requests
+import json
 from dotenv import load_dotenv
 from dotenv import dotenv_values
 
@@ -24,14 +25,15 @@ def obtain_data(config, start_date, end_date):
         return None
 
 config = dotenv_values(".env")
-start_date = '2023-03-07'
-end_date = '2023-03-14'
+start_date = '2024-03-07'
+end_date = '2024-03-14'
 
 data = obtain_data(config, start_date, end_date)
 
 if data:
     print("API Data:")
-    print(data)
+    # Use json.dumps() with indentation for pretty printing
+    print(json.dumps(data, indent=4))
 else:
     print("Could not get data from API.")
 

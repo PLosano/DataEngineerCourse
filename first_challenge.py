@@ -35,6 +35,6 @@ if data:
     # Use json.dumps() with indentation for pretty printing
     print(json.dumps(data, indent=4))
 else:
-    print("Could not get data from API.")
+    print("Could not get data from API.")  
 
 
